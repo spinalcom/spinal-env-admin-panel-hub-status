@@ -1,7 +1,7 @@
 {
-  "name": "spinal-env-admin-pannel-hub-status",
+  "name": "spinal-env-admin-panel-hub-status",
   "version": "1.0.0",
-  "description": "spinal-env-admin-pannel-hub-status",
+  "description": "spinal-env-admin-panel-hub-status",
   "main": "main.js",
   "dependencies": {},
   "devDependencies": {},

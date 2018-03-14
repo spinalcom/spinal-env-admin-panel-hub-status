@@ -1,5 +1,5 @@
 (function () {
-  angular.module('app.spinal-pannel')
+  angular.module('app.spinal-panel')
     .controller('ServerStatusCtrl', ["$scope", "$injector", "$mdToast", "$interval", "$timeout", "$mdDialog", "$q", "SpinalServerStatusService", "layout_uid",
       function ($scope, $injector, $mdToast, $interval, $timeout, $mdDialog, $q, SpinalServerStatusService, layout_uid) {
         $scope.injector = $injector;

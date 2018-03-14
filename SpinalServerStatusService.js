@@ -1,4 +1,4 @@
-angular.module('app.spinal-pannel')
+angular.module('app.spinal-panel')
   .factory("SpinalServerStatusService", ['authService', '$q', "ngSpinalCore",
     function (authService, $q, ngSpinalCore) {
       let spinhubService = {};

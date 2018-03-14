@@ -1,7 +1,7 @@
 require("./SpinalServerStatusService");
 require("./ServerStatusCtrl");
 (function () {
-  angular.module('app.spinal-pannel')
+  angular.module('app.spinal-panel')
     .run(["$templateCache", "$http", "goldenLayoutService",
       function ($templateCache, $http, goldenLayoutService) {
         let load_template = (uri, name) => {
@@ -12,15 +12,15 @@ require("./ServerStatusCtrl");
           });
         };
         let toload = [{
-          uri: '../templates/spinal-env-admin-pannel-hub-status/hub-status-pannel.html',
-          name: 'hub-status-pannel.html'
+          uri: '../templates/spinal-env-admin-panel-hub-status/hub-status-panel.html',
+          name: 'hub-status-panel.html'
         }];
         for (var i = 0; i < toload.length; i++) {
           load_template(toload[i].uri, toload[i].name);
         }
 
-        goldenLayoutService.registerPannel({
-          id: "drag-hub-status-pannel",
+        goldenLayoutService.registerPanel({
+          id: "drag-hub-status-panel",
           name: "SpinalHub Status",
           cfg: {
             isClosable: true,
@@ -29,8 +29,8 @@ require("./ServerStatusCtrl");
             width: 20,
             componentName: 'SpinalHome',
             componentState: {
-              template: 'hub-status-pannel.html',
-              module: 'app.spinal-pannel',
+              template: 'hub-status-panel.html',
+              module: 'app.spinal-panel',
               controller: 'ServerStatusCtrl'
             }
           }

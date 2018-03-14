@@ -1,1 +1,1 @@
-# spinal-env-admin-pannel-hub-status
+# spinal-env-admin-panel-hub-status
